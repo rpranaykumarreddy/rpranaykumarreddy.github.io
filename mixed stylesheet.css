@@ -94,6 +94,7 @@ body {
     width: 100%;
 }
 
+
 .nav-logo {
     width: 100%;
     height: auto;
@@ -247,12 +248,24 @@ a:active {
     text-decoration: none;
 }
 
+.tebold{
+    font-weight: 600 !important;
+}
+
+.pinkbold{
+    font-weight: 600 !important;
+    color: #f33170 !important;
+}
+.bluebold{
+    font-weight: 600 !important;
+    color: #23d8f7 !important;
+}
 .cblue {
-    color: #23d8f7;
+    color: #23d8f7 !important;
 }
 
 .cpink {
-    color: #f33170;
+    color: #f33170 !important;
 }
 
 .cwhite1 {
@@ -907,102 +920,86 @@ footer {
 }
 
 
-/*pranay skill bar*/
-
-.bar .progress-line.pra-html span {
-    width: 90%;
+/*skill bar percent*/
+.bar .progress-line.skb-50 span {
+    width: 50%;
 }
 
-.progress-line.pra-html span::after {
-    content: "90%";
+.progress-line.skb-50 span::after {
+    content: "50%";
 }
 
-.bar .progress-line.pra-css span {
-    width: 75%;
-}
-
-.progress-line.pra-css span::after {
-    content: "75%";
-}
-
-.bar .progress-line.pra-js span {
-    width: 75%;
-}
-
-.progress-line.pra-js span::after {
-    content: "75%";
-}
-
-.bar .progress-line.pra-photoshop span {
-    width: 70%;
-}
-
-.progress-line.pra-photoshop span::after {
-    content: "70%";
-}
-
-
-/*varun skill bar*/
-
-.bar .progress-line.var-html span {
-    width: 90%;
-}
-
-.progress-line.var-html span::after {
-    content: "90%";
-}
-
-.bar .progress-line.var-css span {
-    width: 70%;
-}
-
-.progress-line.var-css span::after {
-    content: "70%";
-}
-
-.bar .progress-line.var-js span {
-    width: 65%;
-}
-
-.progress-line.var-js span::after {
-    content: "65%";
-}
-
-
-/*nirvan skill bar*/
-
-.bar .progress-line.nir-html span {
-    width: 90%;
-}
-
-.progress-line.nir-html span::after {
-    content: "90%";
-}
-
-.bar .progress-line.nir-css span {
-    width: 65%;
-}
-
-.progress-line.nir-css span::after {
-    content: "65%";
-}
-
-.bar .progress-line.nir-js span {
-    width: 65%;
-}
-
-.progress-line.nir-js span::after {
-    content: "65%";
-}
-
-.bar .progress-line.nir-sony span {
+.bar .progress-line.skb-55 span {
     width: 55%;
 }
 
-.progress-line.nir-sony span::after {
+.progress-line.skb-55 span::after {
     content: "55%";
 }
 
+.bar .progress-line.skb-60 span {
+    width: 60%;
+}
+
+.progress-line.skb-60 span::after {
+    content: "60%";
+}
+
+.bar .progress-line.skb-65 span {
+    width: 65%;
+}
+
+.progress-line.skb-65 span::after {
+    content: "65%";
+}
+
+.bar .progress-line.skb-70 span {
+    width: 70%;
+}
+
+.progress-line.skb-70 span::after {
+    content: "70%";
+}
+
+.bar .progress-line.skb-75 span {
+    width: 75%;
+}
+
+.progress-line.skb-75 span::after {
+    content: "75%";
+}
+
+.bar .progress-line.skb-80 span {
+    width: 80%;
+}
+
+.progress-line.skb-80 span::after {
+    content: "80%";
+}
+
+.bar .progress-line.skb-85 span {
+    width: 85%;
+}
+
+.progress-line.skb-85 span::after {
+    content: "85%";
+}
+
+.bar .progress-line.skb-90 span {
+    width: 90%;
+}
+
+.progress-line.skb-90 span::after {
+    content: "90%";
+}
+
+.bar .progress-line.skb-95 span {
+    width: 95%;
+}
+
+.progress-line.skb-95 span::after {
+    content: "95%";
+}
 
 /*name animation*/
 
