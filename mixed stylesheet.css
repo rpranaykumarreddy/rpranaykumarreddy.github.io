@@ -94,7 +94,6 @@ body {
     width: 100%;
 }
 
-
 .nav-logo {
     width: 100%;
     height: auto;
@@ -248,18 +247,20 @@ a:active {
     text-decoration: none;
 }
 
-.tebold{
+.tebold {
     font-weight: 600 !important;
 }
 
-.pinkbold{
+.pinkbold {
     font-weight: 600 !important;
     color: #f33170 !important;
 }
-.bluebold{
+
+.bluebold {
     font-weight: 600 !important;
     color: #23d8f7 !important;
 }
+
 .cblue {
     color: #23d8f7 !important;
 }
@@ -921,6 +922,7 @@ footer {
 
 
 /*skill bar percent*/
+
 .bar .progress-line.skb-50 span {
     width: 50%;
 }
@@ -1000,6 +1002,7 @@ footer {
 .progress-line.skb-95 span::after {
     content: "95%";
 }
+
 
 /*name animation*/
 
@@ -1239,6 +1242,81 @@ footer {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+
+/*popup image*/
+
+#cer-img-pop {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#cer-img {
+    margin: auto;
+    display: block;
+    max-width: 88vw;
+    max-height: 88vh;
+}
+
+#cer-cap {
+    margin: auto;
+    display: block;
+    width: 88vw;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ccc;
+}
+
+#cer-img,
+#cer-cap {
+    animation-name: ani-img;
+    -webkit-animation-name: ani-img;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+
+@keyframes ani-img {
+    from {
+        transform: matrix(0.5, 0, 0, 0.5, 0, 200);
+        opacity: 0.2;
+    }
+    to {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes ani-img {
+    from {
+        -webkit-transform: matrix(0.5, 0, 0, 0.5, 0, 200);
+        -webkit-opacity: 0.2;
+    }
+    to {
+        -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+        -webkit-opacity: 1;
+    }
+}
+
+#cer-clo {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1550;
+    cursor: pointer;
 }
 
 
