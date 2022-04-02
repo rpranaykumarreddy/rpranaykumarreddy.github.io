@@ -1259,18 +1259,29 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+#cer-dic-cen {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
 #cer-img {
-    margin: auto;
     display: block;
-    max-width: 88vw;
-    max-height: 88vh;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 #cer-cap {
-    margin: auto;
     display: block;
-    width: 88vw;
-    padding: 15px 0;
+    padding: 15px 25px;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -1310,7 +1321,7 @@ footer {
 #cer-clo {
     position: absolute;
     top: 10px;
-    right: 80px;
+    right: 20px;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
