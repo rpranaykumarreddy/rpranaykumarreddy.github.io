@@ -419,12 +419,28 @@ a:active {
     text-align: center;
 }
 
+.tejustify {
+    text-align: justify;
+}
+
 .teupper {
     text-transform: uppercase;
 }
 
 .inline {
     display: inline-block !important;
+}
+
+.disnon {
+    display: none;
+}
+
+.vishid {
+    visibility: hidden;
+}
+
+.disinbl {
+    display: inline-block;
 }
 
 .flex-col {
@@ -803,6 +819,10 @@ input[type=submit] {
     margin: 15px 5%;
 }
 
+.hobby {
+    margin: 15px 5%;
+}
+
 .study {
     padding: 9px 6px;
 }
@@ -825,31 +845,21 @@ footer {
 }
 
 
-/*Skill Bar*/
+/*badge-list*/
 
-.skill-bars {
-    padding: 25px 30px;
-    width: 100%;
-    color: #f3f3f3;
+:root {
+    --b: #000;
+    --w: #fff;
+    --v1: #46bddf;
+    --v2: #52d273;
+    --v3: #e84f64;
+    --v4: #e57255;
+    --v5: #e5c453;
 }
 
-.skill-bars .bar {
-    margin: 20px 0;
-}
-
-.skill-bars .bar:first-child {
-    margin-top: 0px;
-}
-
-.skill-bars .bar .info {
-    margin-bottom: 5px;
-}
-
-.skill-bars .bar .info span {
-    font-weight: 500;
-    font-size: 16px;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
+.badge-head {
+    text-align: center;
+    padding: 5px 0px 14px 0px;
 }
 
 @keyframes showText {
@@ -858,149 +868,65 @@ footer {
     }
 }
 
-.skill-bars .bar .progress-line {
-    height: 10px;
+.badge-list {
+    padding: 0px 30px 25px 30px;
     width: 100%;
-    background: #555;
+    color: #f3f3f3;
+    opacity: 0;
+    animation: showText 0.5s linear forwards;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.badge-list .badge {
+    display: inline;
+    margin: 4px 8px;
+    padding: 6px 10px;
+    border: solid #23d8f7 3px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.badge {
+    border: solid var(--col1) 3px !important;
+}
+
+.badge:hover {
+    background-color: var(--col1);
+    color: var(--col2);
+    transform: scale(1.2);
+}
+
+
+/*Tool tip*/
+
+.tooltip {
+    color: #8d8d8d;
     position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    display: inline-block;
 }
 
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.bar .progress-line span {
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: #f33170;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-.progress-line span::before {
-    position: absolute;
-    content: "";
-    top: -14px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
-
-.progress-line span::after {
-    position: absolute;
-    top: -28px;
-    right: 0;
-    font-weight: 500;
-    background: #000;
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgba(45, 45, 45, 0.9);
     color: #fff;
-    padding: 1px 8px;
-    font-size: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    right: 150%;
 }
 
-@keyframes showText2 {
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/*skill bar percent*/
-
-.bar .progress-line.skb-50 span {
-    width: 50%;
-}
-
-.progress-line.skb-50 span::after {
-    content: "50%";
-}
-
-.bar .progress-line.skb-55 span {
-    width: 55%;
-}
-
-.progress-line.skb-55 span::after {
-    content: "55%";
-}
-
-.bar .progress-line.skb-60 span {
-    width: 60%;
-}
-
-.progress-line.skb-60 span::after {
-    content: "60%";
-}
-
-.bar .progress-line.skb-65 span {
-    width: 65%;
-}
-
-.progress-line.skb-65 span::after {
-    content: "65%";
-}
-
-.bar .progress-line.skb-70 span {
-    width: 70%;
-}
-
-.progress-line.skb-70 span::after {
-    content: "70%";
-}
-
-.bar .progress-line.skb-75 span {
-    width: 75%;
-}
-
-.progress-line.skb-75 span::after {
-    content: "75%";
-}
-
-.bar .progress-line.skb-80 span {
-    width: 80%;
-}
-
-.progress-line.skb-80 span::after {
-    content: "80%";
-}
-
-.bar .progress-line.skb-85 span {
-    width: 85%;
-}
-
-.progress-line.skb-85 span::after {
-    content: "85%";
-}
-
-.bar .progress-line.skb-90 span {
-    width: 90%;
-}
-
-.progress-line.skb-90 span::after {
-    content: "90%";
-}
-
-.bar .progress-line.skb-95 span {
-    width: 95%;
-}
-
-.progress-line.skb-95 span::after {
-    content: "95%";
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 
