@@ -847,24 +847,17 @@ footer {
 
 /*badge-list*/
 
-:root {
-    --b: #000;
-    --w: #fff;
-    --v1: #46bddf;
-    --v2: #52d273;
-    --v3: #e84f64;
-    --v4: #e57255;
-    --v5: #e5c453;
-}
-
 .badge-head {
     text-align: center;
     padding: 5px 0px 14px 0px;
 }
 
-@keyframes showText {
+@keyframes aniBadge {
+    0% {
+        transform: scale(0);
+    }
     100% {
-        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -872,8 +865,6 @@ footer {
     padding: 0px 30px 25px 30px;
     width: 100%;
     color: #f3f3f3;
-    opacity: 0;
-    animation: showText 0.5s linear forwards;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -882,24 +873,23 @@ footer {
 }
 
 .badge-list .badge {
-    display: inline;
-    margin: 4px 8px;
-    padding: 6px 10px;
-    border: solid #23d8f7 3px;
+    display: inline-block;
+    margin: 0px;
+    padding: 6px;
+    animation: aniBadge 1s ease forwards;
     font-weight: bold;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
-    border-radius: 12px;
 }
 
-.badge {
-    border: solid var(--col1) 3px !important;
-}
-
-.badge:hover {
-    background-color: var(--col1);
-    color: var(--col2);
-    transform: scale(1.2);
+.badge-list .divd {
+    display: block;
+    transform: scale(1.4) translateY(-5%);
+    margin: 0px;
+    padding: 0px;
+    color: #23d8f7;
+    font-weight: bolder;
+    transition: all 0.5s ease-in-out;
 }
 
 
