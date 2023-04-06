@@ -881,7 +881,7 @@ footer {
 }
 
 .badge-list .divd {
-    display: block;
+    display: none;
     transform: scale(1.4) translateY(-5%);
     margin: 0px;
     padding: 0px;
